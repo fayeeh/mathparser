@@ -39,7 +39,7 @@ project('name', 'cpp', default_options: ['cpp_standart=c++17'])
 mathparser_dep = dependency('mathparser', fallback: ['mathparser', 'mathparser_dep'])
 
 executable('main', 
-  src/main.cpp,
+  'src/main.cpp',
   dependencies: mathparser_dep,
 )
 
