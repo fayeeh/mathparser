@@ -112,7 +112,7 @@ std::unique_ptr<Node> Parser::parse_factor() {
             return std::make_unique<Node>(std::make_unique<Node>(*next_tok->value), nullptr, NodeType::Neg);
         }
 
-        return std::make_unique<Node>(std::move(parse_factor()), nullptr, NodeType::Neg);
+        return std::make_unique<Node>(parse_factor(), nullptr, NodeType::Neg);
     }
     default:
         throw error::MathParserError::new_error(lexer.get_input(), "SyntaxError: invalid syntax", lexer.get_pos());

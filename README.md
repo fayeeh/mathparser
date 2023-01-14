@@ -24,7 +24,7 @@ auto main() -> int {
 
 ## Meson
 ```bash
-$ meson build
+$ meson setup build
 $ cd build
 $ ninja
 $ sudo ninja install # Optional

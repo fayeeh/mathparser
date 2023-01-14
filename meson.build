@@ -1,7 +1,7 @@
 project('mathparser', 'cpp', 
   version: '1.0',
   default_options : [
-    'cpp_standart=c++17',
+    'cpp_std=c++17',
     'buildtype=release',
     'optimization=2',
     'warning_level=2'
