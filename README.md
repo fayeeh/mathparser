@@ -34,7 +34,7 @@ $ sudo ninja install # Optional
 
 ```meson
 # Clone mathparser under <root>/subprojects or install it
-project('name', 'cpp', default_options: ['cpp_standart=c++17'])
+project('name', 'cpp', default_options: ['cpp_std=c++17'])
 
 mathparser_dep = dependency('mathparser', fallback: ['mathparser', 'mathparser_dep'])
 
